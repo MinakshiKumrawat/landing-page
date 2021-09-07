@@ -166,6 +166,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .client-section .box a {
   padding: 0 20px;
@@ -184,6 +185,8 @@ body {
   padding: 30px 20px;
   margin-bottom: 30px;
   min-height: 285px;
+  cursor: pointer;
+  transition: 0.5s all;
 }
 .service-section .box .icon {
   position: absolute;
@@ -214,6 +217,21 @@ body {
   margin-bottom: 29px;
   position: relative;
 }
+.service-section .box h3.color3 {
+  color: #948cff;
+}
+.service-section .box h3.color4 {
+  color: #c3ebe8;
+}
+.service-section .box h3.color5 {
+  color: #a9f5b4;
+}
+.service-section .box h3.color6 {
+  color: #edadaf;
+}
+.service-section .box h3.color7 {
+  color: #d5b7ff;
+}
 .service-section .box h3::after {
   content: "";
   background-color: #060f2c;
@@ -231,6 +249,16 @@ body {
   letter-spacing: normal;
   line-height: 28px;
   text-align: left;
+}
+.service-section .box:hover {
+  background-color: #254170;
+}
+.service-section .box:hover .icon {
+  color: white;
+  filter: invert(1);
+}
+.service-section .box:hover p {
+  color: white;
 }
 .service-section .title {
   position: relative;
@@ -269,9 +297,120 @@ body {
   top: 93px;
 }
 
+.offer-section {
+  padding: 0 0 110px;
+}
+.offer-section .container {
+  position: relative;
+}
+.offer-section .title {
+  margin-bottom: 50px;
+}
+.offer-section .box-grid {
+  flex-basis: 20%;
+  text-align: center;
+  padding: 0 10px;
+}
+.offer-section .box-grid .box {
+  position: relative;
+}
+.offer-section .box-grid .box .box-top {
+  height: 100px;
+  width: 208px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid #080808;
+  border-width: medium;
+  border-bottom: 0;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.offer-section .box-grid .box .box-bottom {
+  height: 100px;
+  width: 208px;
+  display: flex;
+  justify-content: center;
+  border: 1px dotted #080808;
+  border-width: medium;
+  border-top: 0;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding-top: 15px;
+}
+.offer-section .box-grid .box .box-top.even {
+  border-style: dotted;
+}
+.offer-section .box-grid .box .box-bottom.even {
+  border-style: solid;
+}
+.offer-section .box-grid .box img {
+  max-width: 50px;
+}
+.offer-section .box-grid .box h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #565e67;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+}
+.offer-section .box-grid .box .half-circle-left img {
+  position: absolute;
+  top: -3px;
+  bottom: 0;
+  margin: auto;
+  left: -3px;
+}
+.offer-section .box-grid .box .half-circle-right img {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.offer-section .box-grid .box .icon-div img {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: auto;
+}
+.offer-section .bg-img img {
+  position: absolute;
+  z-index: -1;
+}
+.offer-section .bg-img .shape-cross {
+  top: 30px;
+  left: -20px;
+  max-width: 12px;
+}
+.offer-section .bg-img .Shape_dimaond {
+  top: 141px;
+  left: 185px;
+  max-width: 17px;
+}
+.offer-section .bg-img .Shape_5 {
+  left: -56px;
+}
+.offer-section .bg-img .Shape_7 {
+  max-width: 25px;
+  right: 66px;
+  top: 99px;
+}
+.offer-section .bg-img .Vector_Smart_Object_copy_2 {
+  right: -68px;
+  bottom: 158px;
+}
+
 .our-portfolio .Portfolio-bg {
   background-image: url("../images/our-portfolio/portfolio-bg.png");
   padding: 86px 0 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .our-portfolio .over-view-text h4 {
   color: #050547;
@@ -299,9 +438,6 @@ body {
   letter-spacing: normal;
   line-height: 30px;
   text-align: left;
-  width: 440px;
-  height: 79px;
-  opacity: 0.8;
 }
 .our-portfolio .carousel .row-div {
   align-items: flex-end;
@@ -389,6 +525,35 @@ body {
 }
 .our-portfolio .image img {
   max-width: 100%;
+}
+
+@media (max-width: 599px) {
+  .banner .sub-bg-img .round-points {
+    right: 0;
+  }
+  .banner .sub-bg-img .Vector_Smart_Object_copy {
+    right: 0;
+  }
+  .banner .bg-img .banner-img {
+    display: none;
+  }
+
+  .service-section .title .bg-img .bg-left-img {
+    left: 0;
+    max-width: 100%;
+  }
+  .service-section .title .bg-img .dot2-img {
+    top: 0;
+    right: 0;
+  }
+
+  .client-section .box {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .client-section .box a {
+    margin-bottom: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
