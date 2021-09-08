@@ -31,7 +31,7 @@ body {
 .title p {
   color: #666e78;
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -69,7 +69,7 @@ body {
 .banner .banner-content p {
   color: #666e78;
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -298,7 +298,7 @@ body {
 }
 
 .offer-section {
-  padding: 0 0 110px;
+  padding: 0 0 70px;
 }
 .offer-section .container {
   position: relative;
@@ -315,7 +315,7 @@ body {
   position: relative;
 }
 .offer-section .box-grid .box .box-top {
-  height: 100px;
+  height: 102px;
   width: 208px;
   display: flex;
   justify-content: center;
@@ -327,7 +327,7 @@ body {
   border-top-right-radius: 100px;
 }
 .offer-section .box-grid .box .box-bottom {
-  height: 100px;
+  height: 102px;
   width: 208px;
   display: flex;
   justify-content: center;
@@ -406,9 +406,196 @@ body {
   bottom: 158px;
 }
 
+.transform-section {
+  background: url("./../images/Transform-img/3-layers.png");
+  background-size: cover;
+  padding: 7% 0 21px;
+  margin-bottom: 13px;
+}
+.transform-section .block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.transform-section .block .content h3 {
+  color: white;
+  font-size: 24px;
+}
+.transform-section .block .form-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.transform-section .block .input-div input {
+  background: none;
+  border: 1px solid white;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 13px;
+  color: white;
+}
+.transform-section .block .input-div input::-webkit-input-placeholder {
+  /* Edge */
+  color: white;
+}
+.transform-section .block .input-div input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+.transform-section .block .input-div input::placeholder {
+  color: white;
+}
+.transform-section .block .button-div button {
+  border: 0;
+  padding: 8px 17px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-left: 7px;
+}
+
+.why-chose-us-section {
+  padding: 70px 0 0;
+}
+.why-chose-us-section .title {
+  margin-bottom: 60px;
+}
+.why-chose-us-section .container {
+  position: relative;
+}
+.why-chose-us-section .box {
+  position: relative;
+  padding: 34px 20px;
+  min-height: 369px;
+  max-height: 369px;
+}
+.why-chose-us-section .box .number {
+  font-size: 37px;
+  font-weight: 700;
+  color: white;
+  background-color: #ff9103;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  position: absolute;
+  top: -8px;
+  right: 14px;
+}
+.why-chose-us-section .box .shadow-img {
+  width: 87px;
+  position: absolute;
+  right: 21px;
+  z-index: -1;
+  top: 10px;
+}
+.why-chose-us-section .box .icon-1 {
+  max-width: 40px;
+  margin-bottom: 15px;
+}
+.why-chose-us-section .box h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  font-style: normal;
+  line-height: 25px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.why-chose-us-section .box h3::after {
+  content: "";
+  background: #ff9103;
+  width: 42px;
+  height: 3px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+.why-chose-us-section .box p {
+  color: #666e78;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.why-chose-us-section .box .circle {
+  height: 12px;
+  width: 12px;
+  border: 2px solid black;
+  border-radius: 50px;
+  right: 0;
+  bottom: 21px;
+  position: absolute;
+  left: 130px;
+  margin: auto;
+}
+.why-chose-us-section .box .circle-color {
+  height: 17px;
+  width: 17px;
+  background: #ff9103;
+  border-radius: 50px;
+  position: absolute;
+  right: -7.9px;
+  bottom: 32.1px;
+}
+.why-chose-us-section .box .layers-2 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  max-width: 269px;
+  z-index: -1;
+}
+.why-chose-us-section .box.blue .number, .why-chose-us-section .box.blue h3::after, .why-chose-us-section .box.blue .circle-color {
+  background-color: #0265cd;
+}
+.why-chose-us-section .box.light-blue .number, .why-chose-us-section .box.light-blue h3::after, .why-chose-us-section .box.light-blue .circle-color {
+  background-color: #0abef1;
+}
+.why-chose-us-section .box.yellow .number, .why-chose-us-section .box.yellow h3::after, .why-chose-us-section .box.yellow .circle-color {
+  background-color: #f8d71a;
+}
+.why-chose-us-section .bg-img img {
+  position: absolute;
+  max-width: 14px;
+}
+.why-chose-us-section .bg-img .Shape_7 {
+  top: 0;
+  max-width: 29px;
+}
+.why-chose-us-section .bg-img .Vector_Smart_Object {
+  right: 99px;
+  top: -57px;
+}
+.why-chose-us-section .bg-img .Vector_Smart_Object_copy {
+  left: 100px;
+  bottom: -48px;
+}
+.why-chose-us-section .bg-img .shape9 {
+  right: 295px;
+  bottom: -84px;
+  margin: auto;
+}
+.why-chose-us-section .bg-img .Shape_3_copy_2 {
+  right: -57px;
+  bottom: -36px;
+}
+
+.our-portfolio {
+  padding: 90px 0 0;
+}
 .our-portfolio .Portfolio-bg {
   background-image: url("../images/our-portfolio/portfolio-bg.png");
-  padding: 86px 0 120px;
+  padding: 86px 0 180px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -500,7 +687,7 @@ body {
   max-width: 100px;
   display: flex;
   justify-content: space-between;
-  bottom: -69px;
+  bottom: -105px;
 }
 .our-portfolio .carousel .arrow-box .arrowW {
   height: 40px;
@@ -525,6 +712,257 @@ body {
 }
 .our-portfolio .image img {
   max-width: 100%;
+}
+
+.awards-recognition {
+  padding: 100px 0 140px;
+}
+.awards-recognition .container {
+  position: relative;
+}
+.awards-recognition .award-img {
+  margin-top: 160px;
+}
+.awards-recognition .award-img img {
+  display: block;
+  margin: auto;
+  max-width: 336px;
+}
+.awards-recognition .achievement-section {
+  margin-top: -60px;
+}
+.awards-recognition .award-shadow {
+  box-shadow: 0 3px 48px #D1D1D1;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
+.awards-recognition .award-shadow img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.awards-recognition .award-shadow h3 {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+}
+.awards-recognition .award-shadow p {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.awards-recognition .award-bg img {
+  position: absolute;
+}
+.awards-recognition .award-bg .award-logo img {
+  opacity: 0.1;
+}
+.awards-recognition .award-bg .award-bg-1 {
+  top: 0;
+  left: 0;
+  right: 233px;
+  bottom: 358px;
+  margin: auto;
+  max-width: 60px;
+}
+.awards-recognition .award-bg .award-bg-2 {
+  top: 0;
+  left: 288px;
+  right: 0;
+  bottom: 432px;
+  margin: auto;
+  max-width: 60px;
+}
+.awards-recognition .award-bg .award-bg-3 {
+  top: 0;
+  right: 107px;
+  bottom: 315px;
+  margin: auto;
+  max-width: 100px;
+}
+.awards-recognition .award-bg .award-bg-4 {
+  top: 0;
+  right: 0;
+  left: 536px;
+  bottom: 75px;
+  margin: auto;
+  max-width: 100px;
+}
+.awards-recognition .award-bg .award-bg-5 {
+  top: 88px;
+  right: 21px;
+  bottom: 0;
+  margin: auto;
+  max-width: 60px;
+}
+.awards-recognition .award-bg .award-bg-6 {
+  top: 238px;
+  right: 199px;
+  bottom: 0;
+  margin: auto;
+  max-width: 100px;
+}
+.awards-recognition .award-bg .award-bg-7 {
+  top: 0;
+  right: 318px;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 60px;
+}
+.awards-recognition .award-bg .award-bg-8 {
+  top: 0;
+  bottom: 55px;
+  margin: auto;
+  max-width: 100px;
+  left: 109px;
+}
+.awards-recognition .award-bg .award-bg-9 {
+  top: 260px;
+  bottom: 0;
+  margin: auto;
+  max-width: 60px;
+  left: 226px;
+}
+.awards-recognition .award-bg .award-bg-10 {
+  top: 240px;
+  left: 16px;
+  bottom: 0;
+  margin: auto;
+  max-width: 100px;
+}
+.awards-recognition .award-bg .award-bg-cricle {
+  right: 0;
+  top: 210px;
+  max-width: 13px;
+}
+.awards-recognition .award-bg .award-bg-cross {
+  right: 0;
+  top: -34px;
+  max-width: 10px;
+}
+.awards-recognition .award-bg .award-bg-dot {
+  right: 260px;
+  bottom: -32px;
+  max-width: 9px;
+}
+.awards-recognition .award-bg .award-bg-green-cross {
+  bottom: -80px;
+  max-width: 14px;
+  left: 70px;
+}
+.awards-recognition .award-bg .award-bg-puls-icon {
+  top: 239px;
+  left: 217px;
+  max-width: 14px;
+  margin: auto;
+}
+.awards-recognition .award-bg .award-bg-squre {
+  top: 145px;
+  left: 0;
+  max-width: 14px;
+  margin: auto;
+}
+
+.count-section {
+  background-color: #4582fe;
+  padding: 65px 0 220px;
+}
+.count-section .box {
+  text-align: center;
+  border-right: 2px solid #ffffffbd;
+  max-height: 106px;
+}
+.count-section .box:last-child {
+  border: 0;
+}
+.count-section .box .sub-box {
+  margin: auto;
+}
+.count-section .box h3 {
+  color: white;
+  font-size: 58px;
+}
+.count-section .box h3 sup {
+  font-size: 30px;
+  top: -29px;
+}
+.count-section .box p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-us {
+  margin-top: -150px;
+}
+.contact-us .title h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.contact-us .title p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.contact-us .contact-from {
+  box-shadow: 0 8px 42px 7px rgba(68, 62, 124, 0.09);
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 48px 120px;
+}
+.contact-us .form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact-us .form-inline .input-div {
+  position: relative;
+  flex-basis: 220px;
+}
+.contact-us .form-inline i {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  color: #b2b2b2;
+}
+.contact-us .form-inline input {
+  vertical-align: middle;
+  padding: 10px 38px;
+  border: 2px solid #cccccc;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.contact-us .form-inline button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  background-image: linear-gradient(-262deg, #ff6603 0%, #ffa300 100%);
+  border: 0;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
 }
 
 @media (max-width: 599px) {
