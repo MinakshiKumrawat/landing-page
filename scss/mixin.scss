@@ -37,7 +37,7 @@
 @mixin  bannerButton {
     
 background-color: #fd7400;
-background-color: linear-gradient(-262deg, #ff6603 0%, #ffa300 100%);
+
 color: #ffffff;
 font-family: $textFontFamliy;
 font-weight: 400;
@@ -57,6 +57,29 @@ text-transform: uppercase;
     }
 }
 
+@mixin contactButton {
+  padding: 10px 20px;
+  background-color: #fd7400;
+  color: #ffffff;
+  font-family: $textFontFamliy;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  font-weight:500;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  height: 40px; 
+  &:hover{
+    background-color: #291f38;  
+} 
+}
+
 @mixin bannerInput{
     width: 100%;
     background-color: #f8f9fa;
@@ -66,6 +89,16 @@ text-transform: uppercase;
     height: 40px;
     padding: 0 18px;
     font-size: 16px;
+}
+
+@mixin p18{
+  font-family: $textFontFamliy;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-align: left;
 }
 
 @mixin for-phone-only {
