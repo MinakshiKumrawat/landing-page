@@ -1386,10 +1386,14 @@ p{    font-size: 16px;
             font-weight: 500;
             font-size: 28px;
         }
+        .form-inline .input-div {
+    
+            margin-bottom: 15px;
+        }
     }
     .client-say {
         .content h3 {
-            font-size: 31px;
+            font-size: 27px;
         }
         .bg-img {
             .shape5 {
@@ -1404,10 +1408,19 @@ p{    font-size: 16px;
             left: 0;
         }
       }
+      .bg-img .shape7 {
+        left: 249px;
+    }
     }
     .why-chose-us-section {
         .bg-img .Shape_3_copy_2{
             right: 0;
+        }
+        .box {
+   
+            max-width: 254px;
+            margin: auto;
+            margin-bottom: 74px;
         }
     }
     .transform-section {
@@ -1430,5 +1443,23 @@ p{    font-size: 16px;
             }
         }
     }
+}
+.footer-contact-section {
+    .contact-from {
+        .block {
+            display: block;
+        }
+    }
+    .bg-img {
+        .shape2{
+            right: 0;
+        }
+    }
+}
+footer .left,footer .right{
+    text-align: center;
+}
+footer .left{
+    margin-bottom: 20px;
 }
 }

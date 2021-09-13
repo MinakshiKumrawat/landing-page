@@ -1075,9 +1075,11 @@ footer {
     .contact-us .title h3 {
       font-weight: 500;
       font-size: 28px; }
+    .contact-us .form-inline .input-div {
+      margin-bottom: 15px; }
 
   .client-say .content h3 {
-    font-size: 31px; }
+    font-size: 27px; }
   .client-say .bg-img .shape5 {
     z-index: -1;
     max-width: 100%;
@@ -1086,9 +1088,15 @@ footer {
     max-width: 25px;
     top: 31px;
     left: 0; }
+  .client-say .bg-img .shape7 {
+    left: 249px; }
 
   .why-chose-us-section .bg-img .Shape_3_copy_2 {
     right: 0; }
+  .why-chose-us-section .box {
+    max-width: 254px;
+    margin: auto;
+    margin-bottom: 74px; }
 
   .transform-section {
     padding: 138px 0 22px; }
@@ -1098,6 +1106,17 @@ footer {
       margin-bottom: 7px; }
 
   .footer-contact-section .contact-from .block .input button {
-    padding: 0px 20px; } }
+    padding: 0px 20px; }
+
+  .footer-contact-section .contact-from .block {
+    display: block; }
+  .footer-contact-section .bg-img .shape2 {
+    right: 0; }
+
+  footer .left, footer .right {
+    text-align: center; }
+
+  footer .left {
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
