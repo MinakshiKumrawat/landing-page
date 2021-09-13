@@ -1,89 +1,1103 @@
-/*
-Error: wrong number of arguments (1 for 3) for `rgb'
-        on line 154 of scss/style.scss
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #666e78; }
 
-149: 
-150: //Services Section
-151:  .service-section{
-152:     padding: 0 0 80px;
-153:     .box{
-154:         box-shadow: 0 5px 86px rgb(203 213 215 / 50%);
-155:         background-color: #ffffff;
-156:         border-radius: 5px;
-157:         padding: 30px 20px;
-158:         margin-bottom: 30px;
-159:         min-height: 285px;
+* {
+  outline: none; }
 
-Backtrace:
-scss/style.scss:154
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:311:in `reformat_argument_error'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:158:in `rescue in _perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:127:in `_perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 154 of scss/style.scss\A \A 149: \A 150: //Services Section\A 151:  .service-section{\A 152:     padding: 0 0 80px;\A 153:     .box{\A 154:         box-shadow: 0 5px 86px rgb(203 213 215 / 50%);\A 155:         background-color: #ffffff;\A 156:         border-radius: 5px;\A 157:         padding: 30px 20px;\A 158:         margin-bottom: 30px;\A 159:         min-height: 285px;"; }
+.container {
+  position: relative; }
+
+img {
+  max-width: 100%; }
+
+.title {
+  text-align: center;
+  margin-bottom: 30px; }
+  .title h3 {
+    color: #3b3663;
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    margin-bottom: 18px;
+    line-height: 34px; }
+  .title p {
+    color: #666e78;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center; }
+
+.banner {
+  padding: 40px 0;
+  min-height: 500px;
+  position: relative; }
+  .banner .logo {
+    margin-bottom: 120px; }
+    .banner .logo a img {
+      max-width: 200px; }
+  .banner .banner-content-section {
+    position: relative; }
+  .banner .banner-content h3 {
+    color: #3b3663;
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    margin-bottom: 18px;
+    line-height: 34px;
+    font-size: 65px;
+    line-height: 76.5px;
+    text-align: left; }
+  .banner .banner-content p {
+    color: #666e78;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 31.88px;
+    text-align: left;
+    margin: 17px 0 23px; }
+  .banner .banner-content .email-input {
+    box-shadow: 0 16px 40px #00000012;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 40px; }
+    .banner .banner-content .email-input input {
+      width: 100%;
+      background-color: #f8f9fa;
+      color: #898989;
+      border: 0;
+      border-radius: 5px;
+      height: 40px;
+      padding: 0 18px;
+      font-size: 16px; }
+    .banner .banner-content .email-input button {
+      background-color: #fd7400;
+      color: #ffffff;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: center;
+      text-transform: uppercase;
+      position: absolute;
+      right: 24px;
+      border: 0;
+      font-size: 13px;
+      padding: 8px 21px;
+      outline: none;
+      border-radius: 5px; }
+      .banner .banner-content .email-input button:hover {
+        background-color: #291f38; }
+  .banner .bg-img img {
+    position: absolute; }
+  .banner .bg-img .banner-left-bottom {
+    max-width: 101px;
+    left: 0;
+    bottom: -150px; }
+  .banner .bg-img .banner-img {
+    right: 0;
+    top: 0;
+    max-width: 50%; }
+  .banner .sub-bg-img img {
+    position: absolute;
+    z-index: -1; }
+  .banner .sub-bg-img .dots-img {
+    max-width: 109px;
+    left: -87px;
+    top: -33px; }
+  .banner .sub-bg-img .Shape_6 {
+    top: -49px;
+    left: 63px;
+    max-width: 26px; }
+  .banner .sub-bg-img .Vector_Smart_Object_copy_2 {
+    top: -78px;
+    right: 110px; }
+  .banner .sub-bg-img .round-points {
+    bottom: -107px;
+    z-index: -1;
+    right: -78px; }
+  .banner .sub-bg-img .Vector_Smart_Object_copy {
+    right: -125px;
+    bottom: -64px; }
+
+.client-section {
+  padding: 130px 0 100px; }
+  .client-section .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .client-section .box a {
+      padding: 0 20px; }
+      .client-section .box a img {
+        max-width: 150px; }
+
+.service-section {
+  padding: 0 0 80px; }
+  .service-section .box {
+    box-shadow: 0 5px 86px #cbd5d780;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    min-height: 285px;
+    cursor: pointer;
+    transition: 0.5s all; }
+    .service-section .box .icon {
+      position: absolute;
+      left: 58px;
+      top: 61px;
+      max-width: 49px;
+      z-index: 1; }
+    .service-section .box .shape {
+      position: absolute;
+      left: 32px;
+      top: 57px;
+      max-width: 63px; }
+    .service-section .box h3 {
+      color: #67bed4;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 112px;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: center;
+      margin: 0;
+      opacity: 0.08;
+      line-height: 101px;
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 29px;
+      position: relative; }
+    .service-section .box h3.color3 {
+      color: #948cff; }
+    .service-section .box h3.color4 {
+      color: #c3ebe8; }
+    .service-section .box h3.color5 {
+      color: #a9f5b4; }
+    .service-section .box h3.color6 {
+      color: #edadaf; }
+    .service-section .box h3.color7 {
+      color: #d5b7ff; }
+    .service-section .box h3::after {
+      content: "";
+      background-color: #060f2c;
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      bottom: -4px; }
+    .service-section .box p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 28px;
+      text-align: left; }
+    .service-section .box:hover {
+      background-color: #254170; }
+      .service-section .box:hover .icon {
+        color: white;
+        filter: invert(1); }
+      .service-section .box:hover p {
+        color: white; }
+  .service-section .title {
+    position: relative; }
+    .service-section .title .bg-img img {
+      position: absolute;
+      z-index: -1; }
+    .service-section .title .bg-img .Shape_7 {
+      top: -30px;
+      left: 92px;
+      max-width: 25px; }
+    .service-section .title .bg-img .Shape_6 {
+      right: 0;
+      bottom: -2px;
+      max-width: 25px; }
+    .service-section .title .bg-img .dot2-img {
+      top: 0;
+      right: -119px;
+      max-width: 100px; }
+    .service-section .title .bg-img .dote-img {
+      left: -79px;
+      top: 370px;
+      max-width: 150px; }
+    .service-section .title .bg-img .Vector_Smart_Object_copy_2 {
+      top: -61px;
+      right: 237px;
+      max-width: 25px; }
+    .service-section .title .bg-img .bg-left-img {
+      left: -121px;
+      top: 93px; }
+
+.offer-section {
+  padding: 0 0 70px; }
+  .offer-section .title {
+    margin-bottom: 50px; }
+  .offer-section .box-grid {
+    flex-basis: 20%;
+    text-align: center;
+    padding: 0 10px; }
+    .offer-section .box-grid .box {
+      position: relative; }
+      .offer-section .box-grid .box .box-top {
+        height: 102px;
+        width: 208px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        border: 1px solid #080808;
+        border-width: medium;
+        border-bottom: 0;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px; }
+      .offer-section .box-grid .box .box-bottom {
+        height: 102px;
+        width: 208px;
+        display: flex;
+        justify-content: center;
+        border: 1px dotted #080808;
+        border-width: medium;
+        border-top: 0;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        padding-top: 15px; }
+      .offer-section .box-grid .box .box-top.even {
+        border-style: dotted; }
+      .offer-section .box-grid .box .box-bottom.even {
+        border-style: solid; }
+      .offer-section .box-grid .box img {
+        max-width: 50px; }
+      .offer-section .box-grid .box h3 {
+        font-family: "Montserrat", sans-serif;
+        color: #565e67;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center; }
+      .offer-section .box-grid .box .half-circle-left img {
+        position: absolute;
+        top: -3px;
+        bottom: 0;
+        margin: auto;
+        left: -3px; }
+      .offer-section .box-grid .box .half-circle-right img {
+        position: absolute;
+        right: -1px;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+      .offer-section .box-grid .box .icon-div img {
+        position: absolute;
+        left: -27px;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        margin: auto; }
+  .offer-section .bg-img img {
+    position: absolute;
+    z-index: -1; }
+  .offer-section .bg-img .shape-cross {
+    top: 30px;
+    left: -20px;
+    max-width: 12px; }
+  .offer-section .bg-img .Shape_dimaond {
+    top: 141px;
+    left: 185px;
+    max-width: 17px; }
+  .offer-section .bg-img .Shape_5 {
+    left: -56px; }
+  .offer-section .bg-img .Shape_7 {
+    max-width: 25px;
+    right: 66px;
+    top: 99px; }
+  .offer-section .bg-img .Vector_Smart_Object_copy_2 {
+    right: -68px;
+    bottom: 158px; }
+
+.transform-section {
+  background: url("./../images/Transform-img/3-layers.png");
+  background-size: cover;
+  padding: 7% 0 21px;
+  margin-bottom: 13px; }
+  .transform-section .block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; }
+    .transform-section .block .content h3 {
+      color: white;
+      font-size: 24px; }
+    .transform-section .block .form-div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
+    .transform-section .block .input-div input {
+      background: none;
+      border: 1px solid white;
+      height: 40px;
+      border-radius: 5px;
+      padding: 0 13px;
+      color: white; }
+      .transform-section .block .input-div input::-webkit-input-placeholder {
+        color: white; }
+      .transform-section .block .input-div input:-ms-input-placeholder {
+        color: white; }
+      .transform-section .block .input-div input::placeholder {
+        color: white; }
+    .transform-section .block .button-div button {
+      border: 0;
+      padding: 8px 17px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 5px;
+      margin-left: 7px; }
+
+.why-chose-us-section {
+  padding: 70px 0 0; }
+  .why-chose-us-section .title {
+    margin-bottom: 60px; }
+  .why-chose-us-section .box {
+    position: relative;
+    padding: 34px 20px;
+    min-height: 369px;
+    max-height: 369px; }
+    .why-chose-us-section .box .number {
+      font-size: 37px;
+      font-weight: 700;
+      color: white;
+      background-color: #ff9103;
+      height: 65px;
+      width: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      position: absolute;
+      top: -8px;
+      right: 14px; }
+    .why-chose-us-section .box .shadow-img {
+      width: 87px;
+      position: absolute;
+      right: 21px;
+      z-index: -1;
+      top: 10px; }
+    .why-chose-us-section .box .icon-1 {
+      max-width: 40px;
+      margin-bottom: 15px; }
+    .why-chose-us-section .box h3 {
+      color: black;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: left;
+      font-style: normal;
+      line-height: 25px;
+      position: relative;
+      margin-bottom: 30px; }
+    .why-chose-us-section .box h3::after {
+      content: "";
+      background: #ff9103;
+      width: 42px;
+      height: 3px;
+      position: absolute;
+      bottom: -15px;
+      left: 0; }
+    .why-chose-us-section .box p {
+      color: #666e78;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+      text-align: left;
+      display: -webkit-box;
+      max-width: 200px;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .why-chose-us-section .box .circle {
+      height: 12px;
+      width: 12px;
+      border: 2px solid black;
+      border-radius: 50px;
+      right: 0;
+      bottom: 21px;
+      position: absolute;
+      left: 130px;
+      margin: auto; }
+    .why-chose-us-section .box .circle-color {
+      height: 17px;
+      width: 17px;
+      background: #ff9103;
+      border-radius: 50px;
+      position: absolute;
+      right: -7.9px;
+      bottom: 32.1px; }
+    .why-chose-us-section .box .layers-2 {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      max-width: 269px;
+      z-index: -1; }
+  .why-chose-us-section .box.blue .number, .why-chose-us-section .box.blue h3::after, .why-chose-us-section .box.blue .circle-color {
+    background-color: #0265cd; }
+  .why-chose-us-section .box.light-blue .number, .why-chose-us-section .box.light-blue h3::after, .why-chose-us-section .box.light-blue .circle-color {
+    background-color: #0abef1; }
+  .why-chose-us-section .box.yellow .number, .why-chose-us-section .box.yellow h3::after, .why-chose-us-section .box.yellow .circle-color {
+    background-color: #f8d71a; }
+  .why-chose-us-section .bg-img img {
+    position: absolute;
+    max-width: 14px;
+    z-index: -1; }
+  .why-chose-us-section .bg-img .Shape_7 {
+    top: 0;
+    max-width: 29px; }
+  .why-chose-us-section .bg-img .Vector_Smart_Object {
+    right: 99px;
+    top: -57px; }
+  .why-chose-us-section .bg-img .Vector_Smart_Object_copy {
+    left: 100px;
+    bottom: -48px; }
+  .why-chose-us-section .bg-img .shape9 {
+    right: 295px;
+    bottom: -84px;
+    margin: auto; }
+  .why-chose-us-section .bg-img .Shape_3_copy_2 {
+    right: -57px;
+    bottom: -36px; }
+
+.our-portfolio {
+  padding: 90px 0 0; }
+  .our-portfolio .Portfolio-bg {
+    background-image: url("../images/our-portfolio/portfolio-bg.png");
+    padding: 86px 0 180px;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .our-portfolio .over-view-text h4 {
+    color: #050547;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0; }
+  .our-portfolio .over-view-text hr {
+    border: 0;
+    width: 80px;
+    height: 5px;
+    background: #ffc80a;
+    text-align: left;
+    display: inline-block;
+    margin: 12px 0 20px; }
+  .our-portfolio .over-view-text p {
+    color: #050547;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left; }
+  .our-portfolio .carousel .row-div {
+    align-items: flex-end; }
+  .our-portfolio .carousel .content h3 {
+    color: #050547;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 63.75px;
+    text-align: left; }
+  .our-portfolio .carousel .content .sub-content {
+    display: flex; }
+    .our-portfolio .carousel .content .sub-content .sub-box {
+      margin-right: 40px; }
+      .our-portfolio .carousel .content .sub-content .sub-box h3 {
+        color: #050547;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 27.12px;
+        text-align: left; }
+      .our-portfolio .carousel .content .sub-content .sub-box ul {
+        list-style: none;
+        padding-left: 8px; }
+        .our-portfolio .carousel .content .sub-content .sub-box ul li {
+          color: #291f38;
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: 30px;
+          text-align: left; }
+        .our-portfolio .carousel .content .sub-content .sub-box ul li::before {
+          content: "•";
+          color: #f8d71a;
+          font-weight: bold;
+          display: inline-block;
+          width: 9px;
+          height: 9px;
+          position: relative;
+          left: -9px; }
+  .our-portfolio .carousel .arrow-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    bottom: -105px; }
+    .our-portfolio .carousel .arrow-box .arrowW {
+      height: 40px;
+      width: 40px;
+      border: 2px solid #291f38;
+      border-radius: 50px;
+      position: static; }
+      .our-portfolio .carousel .arrow-box .arrowW span {
+        color: #291f38;
+        font-size: 26px; }
+      .our-portfolio .carousel .arrow-box .arrowW .fa-angle-right {
+        position: relative;
+        left: 3px; }
+      .our-portfolio .carousel .arrow-box .arrowW:hover {
+        background-color: #291f38; }
+        .our-portfolio .carousel .arrow-box .arrowW:hover span {
+          color: white; }
+  .our-portfolio .image img {
+    max-width: 100%; }
+
+.awards-recognition {
+  padding: 100px 0 140px; }
+  .awards-recognition .award-img {
+    margin-top: 160px; }
+    .awards-recognition .award-img img {
+      display: block;
+      margin: auto;
+      max-width: 336px; }
+  .awards-recognition .achievement-section {
+    margin-top: -60px; }
+  .awards-recognition .award-shadow {
+    box-shadow: 0 3px 48px #D1D1D1;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center; }
+    .awards-recognition .award-shadow img {
+      max-width: 100%;
+      margin-bottom: 20px; }
+    .awards-recognition .award-shadow h3 {
+      font-size: 24px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: center; }
+    .awards-recognition .award-shadow p {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 30px;
+      text-align: left;
+      text-align: center;
+      margin-bottom: 0; }
+  .awards-recognition .award-bg img {
+    position: absolute;
+    z-index: -1; }
+  .awards-recognition .award-bg .award-logo img {
+    opacity: 0.1; }
+  .awards-recognition .award-bg .award-bg-1 {
+    top: 0;
+    left: 0;
+    right: 233px;
+    bottom: 358px;
+    margin: auto;
+    max-width: 60px; }
+  .awards-recognition .award-bg .award-bg-2 {
+    top: 0;
+    left: 288px;
+    right: 0;
+    bottom: 432px;
+    margin: auto;
+    max-width: 60px; }
+  .awards-recognition .award-bg .award-bg-3 {
+    top: 0;
+    right: 107px;
+    bottom: 315px;
+    margin: auto;
+    max-width: 100px; }
+  .awards-recognition .award-bg .award-bg-4 {
+    top: 0;
+    right: 0;
+    left: 536px;
+    bottom: 75px;
+    margin: auto;
+    max-width: 100px; }
+  .awards-recognition .award-bg .award-bg-5 {
+    top: 88px;
+    right: 21px;
+    bottom: 0;
+    margin: auto;
+    max-width: 60px; }
+  .awards-recognition .award-bg .award-bg-6 {
+    top: 238px;
+    right: 199px;
+    bottom: 0;
+    margin: auto;
+    max-width: 100px; }
+  .awards-recognition .award-bg .award-bg-7 {
+    top: 0;
+    right: 318px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 60px; }
+  .awards-recognition .award-bg .award-bg-8 {
+    top: 0;
+    bottom: 55px;
+    margin: auto;
+    max-width: 100px;
+    left: 109px; }
+  .awards-recognition .award-bg .award-bg-9 {
+    top: 260px;
+    bottom: 0;
+    margin: auto;
+    max-width: 60px;
+    left: 226px; }
+  .awards-recognition .award-bg .award-bg-10 {
+    top: 240px;
+    left: 16px;
+    bottom: 0;
+    margin: auto;
+    max-width: 100px; }
+  .awards-recognition .award-bg .award-bg-cricle {
+    right: 0;
+    top: 210px;
+    max-width: 13px; }
+  .awards-recognition .award-bg .award-bg-cross {
+    right: 0;
+    top: -34px;
+    max-width: 10px; }
+  .awards-recognition .award-bg .award-bg-dot {
+    right: 260px;
+    bottom: -32px;
+    max-width: 9px; }
+  .awards-recognition .award-bg .award-bg-green-cross {
+    bottom: -80px;
+    max-width: 14px;
+    left: 70px; }
+  .awards-recognition .award-bg .award-bg-puls-icon {
+    top: 239px;
+    left: 217px;
+    max-width: 14px;
+    margin: auto; }
+  .awards-recognition .award-bg .award-bg-squre {
+    top: 145px;
+    left: 0;
+    max-width: 14px;
+    margin: auto; }
+
+.client-say {
+  padding: 100px 0px 300px; }
+  .client-say .content h3 {
+    color: #3b3663;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 70.28px;
+    text-align: left; }
+  .client-say .content p {
+    color: #666e78;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+    position: relative; }
+  .client-say .content p.client-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    margin-bottom: 0;
+    margin-top: 40px; }
+    .client-say .content p.client-name b {
+      display: block;
+      color: #3b3663; }
+  .client-say .content .vartical-line {
+    position: absolute;
+    left: -20px;
+    top: 8px;
+    height: 200px; }
+  .client-say .content .images-div img {
+    max-width: 100%; }
+  .client-say .top-img {
+    position: absolute;
+    top: 0; }
+  .client-say .bg-img img {
+    position: absolute;
+    z-index: -1; }
+  .client-say .bg-img .shape1 {
+    max-width: 25px;
+    top: 31px;
+    left: 313px;
+    margin: auto; }
+  .client-say .bg-img .shape2 {
+    max-width: 25px;
+    bottom: -96px;
+    right: 52px;
+    margin: auto; }
+  .client-say .bg-img .shape3 {
+    left: 0;
+    bottom: -242px;
+    max-width: 14px; }
+  .client-say .bg-img .shape4 {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 14px;
+    margin: auto; }
+  .client-say .bg-img .shape5 {
+    top: 106px;
+    z-index: -1;
+    max-width: 572px;
+    left: -108px; }
+  .client-say .bg-img .shape6 {
+    left: -150px;
+    top: 278px;
+    max-width: 159px; }
+  .client-say .bg-img .shape7 {
+    left: 323px;
+    bottom: -38px;
+    right: 0;
+    margin: auto;
+    max-width: 7px; }
+  .client-say .bg-img .shape8 {
+    bottom: -169px;
+    left: 183px; }
+
+.count-section {
+  background-color: #4582fe;
+  padding: 65px 0 220px; }
+  .count-section .box {
+    text-align: center;
+    border-right: 2px solid #ffffffbd;
+    max-height: 106px; }
+    .count-section .box:last-child {
+      border: 0; }
+    .count-section .box .sub-box {
+      margin: auto; }
+    .count-section .box h3 {
+      color: white;
+      font-size: 58px; }
+      .count-section .box h3 sup {
+        font-size: 30px;
+        top: -29px; }
+    .count-section .box p {
+      color: white;
+      font-size: 20px;
+      font-weight: 500; }
+
+.contact-us {
+  margin-top: -150px; }
+  .contact-us .title h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 10px; }
+  .contact-us .title p {
+    font-size: 18px;
+    margin-bottom: 0; }
+  .contact-us .contact-from {
+    box-shadow: 0 8px 42px 7px #443e7c17;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 48px 120px; }
+  .contact-us .form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around; }
+    .contact-us .form-inline .input-div {
+      position: relative;
+      flex-basis: 220px; }
+    .contact-us .form-inline i {
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      color: #b2b2b2; }
+    .contact-us .form-inline input {
+      vertical-align: middle;
+      padding: 10px 38px;
+      border: 2px solid #cccccc;
+      background-color: #ffffff;
+      border-radius: 5px;
+      font-size: 13px;
+      font-weight: 500;
+      width: 100%;
+      font-family: "Poppins", sans-serif; }
+    .contact-us .form-inline button {
+      padding: 10px 20px;
+      background-color: #fd7400;
+      color: #ffffff;
+      font-family: "Poppins", sans-serif;
+      border: 0;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      border-radius: 5px;
+      width: 100%;
+      outline: none;
+      height: 40px;
+      height: 48px; }
+      .contact-us .form-inline button:hover {
+        background-color: #291f38; }
+
+.footer-contact-section {
+  background-image: url("./../images/footer-contact/bg-img.png");
+  background-size: cover; }
+  .footer-contact-section .contact-from {
+    box-shadow: 0 5px 70px #25377b26;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 80px 50px;
+    max-width: 631px;
+    margin: auto;
+    margin-top: -210px;
+    margin-bottom: 152px; }
+    .footer-contact-section .contact-from .title p {
+      line-height: 26px;
+      font-size: 16px;
+      margin-bottom: 30px; }
+    .footer-contact-section .contact-from .title h3 {
+      font-size: 28px;
+      margin-bottom: 10px; }
+    .footer-contact-section .contact-from .block {
+      display: flex; }
+      .footer-contact-section .contact-from .block .input {
+        position: relative;
+        margin-bottom: 20px;
+        flex-basis: 50%;
+        padding: 0 15px; }
+        .footer-contact-section .contact-from .block .input input {
+          border: 0;
+          border-bottom: 1px solid #b2b2b2;
+          padding: 4px 40px;
+          font-size: 14px;
+          color: #b2b2b2;
+          width: 100%;
+          height: 40px; }
+        .footer-contact-section .contact-from .block .input i {
+          position: absolute;
+          top: 9px;
+          left: 26px;
+          color: #b2b2b2; }
+        .footer-contact-section .contact-from .block .input button {
+          padding: 10px 20px;
+          background-color: #fd7400;
+          color: #ffffff;
+          font-family: "Poppins", sans-serif;
+          border: 0;
+          color: white;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: center;
+          text-transform: uppercase;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          border-radius: 5px;
+          width: 100%;
+          outline: none;
+          height: 40px; }
+          .footer-contact-section .contact-from .block .input button:hover {
+            background-color: #291f38; }
+  .footer-contact-section .bg-img img {
+    position: absolute;
+    z-index: -1; }
+  .footer-contact-section .bg-img .shape1 {
+    max-width: 24px;
+    right: 64px;
+    top: 0px;
+    bottom: 73px;
+    margin: auto; }
+  .footer-contact-section .bg-img .shape2 {
+    top: 85px; }
+  .footer-contact-section .bg-img .shape3 {
+    left: 162px;
+    top: 205px; }
+  .footer-contact-section .bg-img .shape4 {
+    right: 118px;
+    max-width: 17px;
+    bottom: 74px; }
+  .footer-contact-section .bg-img .shape5 {
+    left: 0;
+    bottom: 81px;
+    max-width: 14px; }
+
+footer {
+  background-color: #1f3173;
+  padding: 40px 0; }
+  footer .row {
+    align-items: center; }
+  footer .left a img {
+    max-width: 250px; }
+  footer .right {
+    text-align: right; }
+    footer .right p {
+      margin-bottom: 0;
+      color: #949dbf;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500; }
+  footer .bg-img img {
+    position: absolute;
+    z-index: -1; }
+  footer .bg-img .shape1 {
+    max-width: 23px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0; }
+  footer .bg-img .shape2 {
+    left: 29%;
+    top: 33px; }
+  footer .bg-img .shape3 {
+    right: 32%;
+    bottom: -11px; }
+
+@media (max-width: 599px) {
+  .banner .banner-content h3 {
+    font-size: 40px;
+    line-height: 46px; }
+  .banner .sub-bg-img .round-points {
+    right: 0; }
+  .banner .sub-bg-img .Vector_Smart_Object_copy {
+    right: 0; }
+  .banner .bg-img .banner-img {
+    display: none; }
+
+  .service-section .title .bg-img .bg-left-img {
+    left: 0;
+    max-width: 100%; }
+  .service-section .title .bg-img .dot2-img {
+    top: 0;
+    right: 0; }
+
+  .client-section .box {
+    flex-direction: column;
+    margin-bottom: 15px; }
+    .client-section .box a {
+      margin-bottom: 40px; } }
+@media (max-width: 768px) {
+  .title h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    line-height: 37px; }
+  .title p {
+    font-size: 16px;
+    line-height: 28px; }
+
+  .service-section {
+    padding: 0 0 0px; }
+
+  .offer-section {
+    padding: 0 0 0px; }
+    .offer-section .title {
+      margin-bottom: 15px; }
+    .offer-section .bg-img .Vector_Smart_Object_copy_2 {
+      right: 0; }
+    .offer-section .box-grid .box {
+      position: relative;
+      margin-bottom: 25px; }
+    .offer-section .box-grid .box .icon-div img {
+      display: none; }
+
+  .awards-recognition {
+    padding: 53px 0 0px; }
+    .awards-recognition .award-img {
+      margin-top: 0; }
+      .awards-recognition .award-img img {
+        max-width: 100%; }
+    .awards-recognition .achievement-section {
+      margin-top: 50px; }
+    .awards-recognition .award-shadow {
+      margin-bottom: 20px; }
+    .awards-recognition .award-bg .award-logo img {
+      display: none; }
+
+  .count-section {
+    padding: 37px 0 37px; }
+    .count-section .box h3 {
+      font-size: 45px; }
+    .count-section .box {
+      border: 0;
+      margin-bottom: 30px; }
+
+  .contact-us {
+    margin-top: 0; }
+    .contact-us .contact-from {
+      padding: 48px 1px; }
+    .contact-us .title h3 {
+      font-weight: 500;
+      font-size: 28px; }
+
+  .client-say .content h3 {
+    font-size: 31px; }
+  .client-say .bg-img .shape5 {
+    z-index: -1;
+    max-width: 100%;
+    left: 0; }
+  .client-say .bg-img .shape1 {
+    max-width: 25px;
+    top: 31px;
+    left: 0; }
+
+  .why-chose-us-section .bg-img .Shape_3_copy_2 {
+    right: 0; }
+
+  .transform-section {
+    padding: 138px 0 22px; }
+    .transform-section .block .button-div button {
+      margin: 0; }
+    .transform-section .block .input-div input {
+      margin-bottom: 7px; }
+
+  .footer-contact-section .contact-from .block .input button {
+    padding: 0px 20px; } }
+
+/*# sourceMappingURL=style.css.map */

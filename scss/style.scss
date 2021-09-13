@@ -151,7 +151,7 @@ img{
  .service-section{
     padding: 0 0 80px;
     .box{
-        box-shadow: 0 5px 86px rgb(203 213 215 / 50%);
+         box-shadow: 0 5px 86px #cbd5d780;
         background-color: #ffffff;
         border-radius: 5px;
         padding: 30px 20px;
@@ -583,6 +583,7 @@ img{
          img{
             position: absolute;
             max-width: 14px;
+            z-index: -1;
          }
          .Shape_7{
           
@@ -799,6 +800,7 @@ img{
  .award-bg{
      img{
         position: absolute;
+        z-index: -1;
      }
      .award-logo{
          img{
@@ -966,10 +968,12 @@ img{
     .top-img{
         position:absolute;
         top: 0;
+        
     }
     .bg-img{
         img{
          position:absolute;
+         z-index: -1;
         }
         .shape1{
             max-width: 25px;
@@ -1070,7 +1074,7 @@ img{
       }
   }
    .contact-from{
-    box-shadow: 0 8px 42px 7px rgb(68 62 124 / 9%);
+    box-shadow: 0 8px 42px 7px #443e7c17;
     background-color: #ffffff;
     border-radius: 8px;
     padding: 48px 120px;
@@ -1121,7 +1125,7 @@ img{
     background-size: cover;
   
 .contact-from{  
-    box-shadow: 0 5px 70px rgb(37 55 123 / 15%);
+    box-shadow: 0 5px 70px #25377b26;
     background-color: #ffffff;
     border-radius: 8px;
     padding: 80px 50px;
@@ -1173,6 +1177,7 @@ img{
 .bg-img{
     img{
   position:absolute;
+  z-index: -1;
     }
     .shape1{
         max-width: 24px;
@@ -1235,6 +1240,7 @@ footer{
     .bg-img{
         img{
             position: absolute;
+            z-index: -1;
         }
         .shape1{
             max-width: 23px;
@@ -1259,6 +1265,11 @@ footer{
 @include for-phone-only{
 
     .banner {
+      .banner-content{ h3 {
+            font-size: 40px;
+            line-height:46px;
+        }
+    }
         .sub-bg-img {
             .round-points{
             right:0;
@@ -1299,3 +1310,125 @@ footer{
 }
 
 
+@include for-phone-tablet-only{
+    .title {
+        h3 {
+      
+        font-size: 28px;
+        margin-bottom: 10px;
+        line-height: 37px;
+}
+p{    font-size: 16px;
+   
+    line-height: 28px;
+    }
+    }
+    .service-section {
+        padding: 0 0 0px;
+    }
+    .offer-section {
+        padding: 0 0 0px;
+        .title {
+            margin-bottom: 15px;
+        }
+        .bg-img .Vector_Smart_Object_copy_2{
+        right: 0;
+    }
+    .box-grid .box {
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .box-grid {
+        .box {
+            .icon-div img{
+                display: none;
+            }
+        }
+    }
+    }
+    .awards-recognition{
+        padding: 53px 0 0px;
+        .award-img {
+            margin-top: 0;
+            img{
+                max-width: 100%;
+            }
+
+    } 
+    .achievement-section {
+        margin-top: 50px;
+    }
+    .award-shadow {
+     
+        margin-bottom: 20px;
+    }
+  .award-bg .award-logo img{
+      display: none;
+  }
+    }
+   
+    .count-section {
+        padding: 37px 0 37px;
+         .box h3 {
+            font-size: 45px;
+        }
+        .box{
+            border: 0;
+            margin-bottom: 30px;
+        }
+    }
+    .contact-us {
+        margin-top: 0;
+        .contact-from {
+            padding: 48px 1px;
+        }
+        .title h3 {
+            font-weight: 500;
+            font-size: 28px;
+        }
+    }
+    .client-say {
+        .content h3 {
+            font-size: 31px;
+        }
+        .bg-img {
+            .shape5 {
+          
+            z-index: -1;
+            max-width: 100%;
+            left: 0;
+        }
+       .shape1 {
+            max-width: 25px;
+            top: 31px;
+            left: 0;
+        }
+      }
+    }
+    .why-chose-us-section {
+        .bg-img .Shape_3_copy_2{
+            right: 0;
+        }
+    }
+    .transform-section {
+      
+        padding: 138px 0 22px;
+        .block .button-div button{
+            margin: 0;
+        }
+        .block .input-div input {
+      
+            margin-bottom: 7px;
+        }
+      
+    }
+    .footer-contact-section {
+        .contact-from {
+            .block {
+                .input button {
+                    padding: 0px 20px;
+            }
+        }
+    }
+}
+}
