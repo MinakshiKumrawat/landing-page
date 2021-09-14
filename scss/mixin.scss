@@ -37,7 +37,6 @@
 @mixin  bannerButton {
     
 background-color: #fd7400;
-
 color: #ffffff;
 font-family: $textFontFamliy;
 font-weight: 400;
@@ -101,11 +100,20 @@ text-transform: uppercase;
   text-align: left;
 }
 
+
 @mixin for-phone-only {
-    @media (max-width: 599px) { @content; }
+  
+  @media (max-width: 599px) { @content; }
   }
   @mixin for-phone-tablet-only{
     @media (max-width: 768px) { @content; }
+  }
+  @mixin for-only-ipad{
+    @media (min-width:768px) and (max-width: 992px) { @content; }
+  }
+
+  @mixin for-only-ipadpro {
+    @media (min-width:993px) and (max-width: 1200px) { @content; }
   }
   @mixin for-tablet-portrait-up {
     @media (min-width: 600px) { @content; }
@@ -118,4 +126,8 @@ text-transform: uppercase;
   }
   @mixin for-big-desktop-up {
     @media (min-width: 1800px) { @content; }
+  }
+
+  @mixin  withOutContainer {
+    @media (max-width:1200px) { @content; }
   }
